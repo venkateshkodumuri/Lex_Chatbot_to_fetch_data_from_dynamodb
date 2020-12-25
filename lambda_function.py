@@ -10,7 +10,7 @@ def lambda_handler(event, context):
     #print('the intent is : ',intent)
     Accountnumber=(event['currentIntent']['slots']['AccountNumber'])
     #print('accountnumber is : ',Accountnumber)
-    if intent=='BalanceEnquiry':
+    if intent=='AccountBalanceEnquiry':
         balanceenquiry(Accountnumber)
         return result
 
